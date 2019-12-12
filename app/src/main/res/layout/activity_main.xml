@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+<!--
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <CheckBox
+                    android:id="@+id/chk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Mobile Number is Linked with Aadhar"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#ff4500"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/view1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/security" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_toRightOf="@id/view2"
+                        app:srcCompat="@drawable/esign" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/view3"
+                        app:srcCompat="@drawable/otp_red" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/view4"
+                        app:srcCompat="@drawable/verify" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkboxor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/txtviewOR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="OR"
+                    android:textColor="@android:color/black"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <CheckBox
+                    android:id="@+id/chk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Mobile Number is not Linked with Aadhar"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="2"
+                    android:text="Download and print the form,sign and courier it to our office in Chennai  "
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/viewn1"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/viewn1"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/pdfgenerate" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/viewn2"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_toRightOf="@id/viewn2"
+                        app:srcCompat="@drawable/printandmail" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/viewn3"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/viewn3"
+                        app:srcCompat="@drawable/signandc" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/viewn4"
+                        android:layout_width="70dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/viewn4"
+                        app:srcCompat="@drawable/verify" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_VID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="Not sure whether mobile number is Linked with Aadhar?"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
